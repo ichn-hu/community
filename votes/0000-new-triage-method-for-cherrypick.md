@@ -10,7 +10,7 @@ This model still have a drawback that it is not able to identify whether all the
 
 ## Solution
 
-We refer to the process of identify if a bug is affecting one version as **triage**, and the person who is triaging the affection as **triager**.
+We refer to the process of identifying if a bug is affecting one version as **triage**, and the person who is triaging the affection as **triager**.
 
 The triage workflow still only applies to critical and major bugfix issues. For such issues, when they are created and identified, the ti-chi-bot will assign a list of `may-affect-x.x` labels to the issue. For example, currently we have version 5.0, 5.1, 5.2, 5.3, 4.0 and the in-sprint 5.4, when a `type/bug` issue is created and added label `severity/critical` or `severity/major`, the ti-chi-bot will add label `may-affect-4.0`, `may-affect-5.0`, `may-affect-5.1`, `may-affect-5.2`, and `may-affect-5.4`. These labels mean that whether the bug affects these release versions are not yet determined, and is awaiting been triaged.
 
